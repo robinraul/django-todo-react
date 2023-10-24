@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div  className="container"> 
       <Banner>
-        <div> Physical Therapists at Movement-X</div>
+        <div> Physical Therapists available at Movement-X</div>
       </Banner>
       <hr className="hrClass" />
       <PTList />
