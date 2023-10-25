@@ -35,7 +35,7 @@ const PTList = () => {
             <tr>
             <td>{h.title}</td>
             <td>{h.description}</td> 
-            <td><input type="checkbox" checked={h.comleted} /> </td>
+            <td><input type="checkbox" checked={h.completed} /> </td>
           </tr>
           ))}
         </tbody>
