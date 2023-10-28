@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 
 const PTList = () => {
   const [PTs, setPTs] = useState([]);
+  const checkboxRef = useRef(null)
 
   useEffect(() => {
     const fetchPTs = async () => {
@@ -35,7 +36,7 @@ const PTList = () => {
             <tr>
             <td>{h.title}</td>
             <td>{h.description}</td> 
-            <td><input type="checkbox" checked={h.completed} /> </td>
+            <td><input type="checkbox" defaultChecked={h.completed}  ref={checkboxRef} /> </td>
           </tr>
           ))}
         </tbody>

@@ -10,14 +10,14 @@ const App = () => {
   return (
     <div  className="container"> 
 
-    <ErrorBoundary fallback={<div>Something went wrong</div>}>
+    <ErrorBoundary fallback={<div>Something went wrong. Please contact Support.</div>}>
 
       <Banner>
         <div> Physical Therapists available at Movement-X</div>
       </Banner>
       <hr className="hrClass" />
       <PTList />
-      
+
     </ErrorBoundary>
       
     </div>
